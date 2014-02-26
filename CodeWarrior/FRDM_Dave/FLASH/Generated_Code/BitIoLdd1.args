@@ -1,0 +1,22 @@
+-mcpu=cortex-m0
+-mthumb
+-mfloat-abi=soft
+-g3
+-gdwarf-2
+-gstrict-dwarf
+-I"D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Project_Headers"
+-I"D:/Documents/HSLU/Intro/Git/Intro Repo/Projects/GroupMuffinFighters/Common"
+-I"D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Project_Settings/Startup_Code"
+-I"D:/Programme/Freescale/CW10.5/CW MCU v10.5/MCU/ARM_GCC_Support/ewl/EWL_C/include"
+-I"D:/Programme/Freescale/CW10.5/CW MCU v10.5/MCU/ARM_GCC_Support/ewl/EWL_Runtime/include"
+-I"D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code"
+-I"D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Sources"
+-I"D:/Programme/Freescale/CW10.5/CW MCU v10.5/MCU/ProcessorExpert/lib/Kinetis/iofiles"
+-I"D:/Programme/Freescale/CW10.5/CW MCU v10.5/MCU/ProcessorExpert/lib/Kinetis/pdd/inc"
+-O0
+-ffunction-sections
+-fdata-sections
+-Wall
+-c
+-fmessage-length=0
+-specs=ewl_c.specs
