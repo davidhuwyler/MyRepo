@@ -18,7 +18,7 @@ Generated_Code/PE_LDD.o: ../Generated_Code/PE_LDD.c \
  D:/Programme/Freescale/CW10.5/CW\ MCU\ v10.5/MCU/ProcessorExpert/lib/Kinetis/pdd/inc/PDD_Types.h \
  ../Generated_Code/Cpu.h ../Generated_Code/LED2.h \
  ../Generated_Code/LEDpin2.h ../Generated_Code/BitIoLdd2.h \
- ../Generated_Code/WAIT1.h
+ ../Generated_Code/WAIT1.h ../Generated_Code/SegLCD1.h
 
 D:/Programme/Freescale/CW10.5/CW\ MCU\ v10.5/MCU/ARM_GCC_Support/ewl/EWL_C/include/lib_ewl.prefix:
 
@@ -71,3 +71,5 @@ D:/Programme/Freescale/CW10.5/CW\ MCU\ v10.5/MCU/ProcessorExpert/lib/Kinetis/pdd
 ../Generated_Code/BitIoLdd2.h:
 
 ../Generated_Code/WAIT1.h:
+
+../Generated_Code/SegLCD1.h:

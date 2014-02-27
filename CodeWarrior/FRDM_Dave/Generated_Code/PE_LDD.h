@@ -5,7 +5,7 @@
 **     Processor   : MKL46Z256VMC4
 **     Version     : Component 01.002, Driver 01.04, CPU db: 3.00.000
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2014-02-26, 08:25, # CodeGen: 3
+**     Date/Time   : 2014-02-26, 10:41, # CodeGen: 4
 **     Abstract    :
 **
 **     Settings    :
@@ -42,6 +42,7 @@
 #include "LEDpin2.h"
 #include "BitIoLdd2.h"
 #include "WAIT1.h"
+#include "SegLCD1.h"
 
 
 /*

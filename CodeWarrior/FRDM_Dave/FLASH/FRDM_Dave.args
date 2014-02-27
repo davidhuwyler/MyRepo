@@ -1,5 +1,6 @@
 "./Generated_Code/WAIT1.o"
 "./Generated_Code/Vectors.o"
+"./Generated_Code/SegLCD1.o"
 "./Generated_Code/PE_LDD.o"
 "./Generated_Code/LEDpin2.o"
 "./Generated_Code/LEDpin1.o"
@@ -13,7 +14,10 @@
 "./Sources/Common/platform.o"
 "./Sources/Common/application.o"
 "./Sources/Common/LED.o"
+"./Sources/LCD/s401.o"
+"./Sources/LCD/LCD.o"
 "./Sources/sa_mtb.o"
+"./Sources/daveApp.o"
 "./Sources/ProcessorExpert.o"
 "./Sources/Events.o"
 -mcpu=cortex-m0

@@ -8,36 +8,43 @@
 C_SRCS_QUOTED += \
 "../Sources/Events.c" \
 "../Sources/ProcessorExpert.c" \
+"../Sources/daveApp.c" \
 "../Sources/sa_mtb.c" \
 
 C_SRCS += \
 ../Sources/Events.c \
 ../Sources/ProcessorExpert.c \
+../Sources/daveApp.c \
 ../Sources/sa_mtb.c \
 
 OBJS += \
 ./Sources/Events.o \
 ./Sources/ProcessorExpert.o \
+./Sources/daveApp.o \
 ./Sources/sa_mtb.o \
 
 C_DEPS += \
 ./Sources/Events.d \
 ./Sources/ProcessorExpert.d \
+./Sources/daveApp.d \
 ./Sources/sa_mtb.d \
 
 OBJS_QUOTED += \
 "./Sources/Events.o" \
 "./Sources/ProcessorExpert.o" \
+"./Sources/daveApp.o" \
 "./Sources/sa_mtb.o" \
 
 C_DEPS_QUOTED += \
 "./Sources/Events.d" \
 "./Sources/ProcessorExpert.d" \
+"./Sources/daveApp.d" \
 "./Sources/sa_mtb.d" \
 
 OBJS_OS_FORMAT += \
 ./Sources/Events.o \
 ./Sources/ProcessorExpert.o \
+./Sources/daveApp.o \
 ./Sources/sa_mtb.o \
 
 
@@ -58,9 +65,17 @@ Sources/ProcessorExpert.o: ../Sources/ProcessorExpert.c
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Sources/sa_mtb.o: ../Sources/sa_mtb.c
+Sources/daveApp.o: ../Sources/daveApp.c
 	@echo 'Building file: $<'
 	@echo 'Executing target #3 $<'
+	@echo 'Invoking: ARM Ltd Windows GCC C Compiler'
+	"$(ARMSourceryDirEnv)/arm-none-eabi-gcc" "$<" @"Sources/daveApp.args" -MMD -MP -MF"$(@:%.o=%.d)" -o"Sources/daveApp.o"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Sources/sa_mtb.o: ../Sources/sa_mtb.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #4 $<'
 	@echo 'Invoking: ARM Ltd Windows GCC C Compiler'
 	"$(ARMSourceryDirEnv)/arm-none-eabi-gcc" "$<" @"Sources/sa_mtb.args" -MMD -MP -MF"$(@:%.o=%.d)" -o"Sources/sa_mtb.o"
 	@echo 'Finished building: $<'

@@ -18,6 +18,7 @@ Generated_Code/Vectors.o: ../Generated_Code/Vectors.c \
  D:/Programme/Freescale/CW10.5/CW\ MCU\ v10.5/MCU/ProcessorExpert/lib/Kinetis/pdd/inc/PDD_Types.h \
  ../Generated_Code/LED2.h ../Generated_Code/LEDpin2.h \
  ../Generated_Code/BitIoLdd2.h ../Generated_Code/WAIT1.h \
+ ../Generated_Code/SegLCD1.h \
  D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Sources/Events.h \
  D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/PE_Types.h \
  D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/PE_Error.h \
@@ -29,7 +30,8 @@ Generated_Code/Vectors.o: ../Generated_Code/Vectors.c \
  D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/LED2.h \
  D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/LEDpin2.h \
  D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/BitIoLdd2.h \
- D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/WAIT1.h
+ D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/WAIT1.h \
+ D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/SegLCD1.h
 
 D:/Programme/Freescale/CW10.5/CW\ MCU\ v10.5/MCU/ARM_GCC_Support/ewl/EWL_C/include/lib_ewl.prefix:
 
@@ -81,6 +83,8 @@ D:/Programme/Freescale/CW10.5/CW\ MCU\ v10.5/MCU/ProcessorExpert/lib/Kinetis/pdd
 
 ../Generated_Code/WAIT1.h:
 
+../Generated_Code/SegLCD1.h:
+
 D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Sources/Events.h:
 
 D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/PE_Types.h:
@@ -104,3 +108,5 @@ D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/LEDpin2.h:
 D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/BitIoLdd2.h:
 
 D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/WAIT1.h:
+
+D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/SegLCD1.h:

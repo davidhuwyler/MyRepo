@@ -7,7 +7,7 @@
 **     Version     : Component 01.002, Driver 01.04, CPU db: 3.00.000
 **     Datasheet   : KL46P121M48SF4RM, Rev.2, Dec 2012
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2014-02-26, 08:25, # CodeGen: 3
+**     Date/Time   : 2014-02-26, 18:47, # CodeGen: 5
 **     Abstract    :
 **
 **     Settings    :
@@ -42,6 +42,7 @@
 #include "LEDpin2.h"
 #include "BitIoLdd2.h"
 #include "WAIT1.h"
+#include "SegLCD1.h"
 #include "PE_Types.h"
 #include "PE_Error.h"
 #include "PE_Const.h"
@@ -107,9 +108,11 @@ void __init_hardware(void)
   /* System clock initialization */
   /* SIM_CLKDIV1: OUTDIV1=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,OUTDIV4=3,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0 */
   SIM_CLKDIV1 = (SIM_CLKDIV1_OUTDIV1(0x00) | SIM_CLKDIV1_OUTDIV4(0x03)); /* Set the system prescalers to safe value */
-  /* SIM_SCGC5: PORTE=1,PORTD=1,PORTA=1 */
+  /* SIM_SCGC5: PORTE=1,PORTD=1,PORTC=1,PORTB=1,PORTA=1 */
   SIM_SCGC5 |= SIM_SCGC5_PORTE_MASK |
                SIM_SCGC5_PORTD_MASK |
+               SIM_SCGC5_PORTC_MASK |
+               SIM_SCGC5_PORTB_MASK |
                SIM_SCGC5_PORTA_MASK;   /* Enable clock gate for ports to enable pin routing */
   if ((PMC_REGSC & PMC_REGSC_ACKISO_MASK) != 0x0U) {
     /* PMC_REGSC: ACKISO=1 */
@@ -235,6 +238,8 @@ void PE_low_level_init(void)
   (void)BitIoLdd2_Init(NULL);
   /* ### LED "LED2" init code ... */
   LED2_Init(); /* initialize LED driver */
+  /* ### SegLCD_LDD "SegLCD1" component auto initialization. Auto initialization feature can be disabled by component property "Auto initialization". */
+  (void)SegLCD1_Init(NULL);
   __EI();
 }
   /* Flash configuration field */

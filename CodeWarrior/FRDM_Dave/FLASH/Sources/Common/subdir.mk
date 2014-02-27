@@ -44,7 +44,7 @@ OBJS_OS_FORMAT += \
 # Each subdirectory must supply rules for building sources it contributes
 Sources/Common/LED.o: $(COMMON_ESCAPED)/LED.c
 	@echo 'Building file: $<'
-	@echo 'Executing target #4 $<'
+	@echo 'Executing target #7 $<'
 	@echo 'Invoking: ARM Ltd Windows GCC C Compiler'
 	"$(ARMSourceryDirEnv)/arm-none-eabi-gcc" "$<" @"Sources/Common/LED.args" -MMD -MP -MF"$(@:%.o=%.d)" -o"Sources/Common/LED.o"
 	@echo 'Finished building: $<'
@@ -52,7 +52,7 @@ Sources/Common/LED.o: $(COMMON_ESCAPED)/LED.c
 
 Sources/Common/application.o: $(COMMON_ESCAPED)/application.c
 	@echo 'Building file: $<'
-	@echo 'Executing target #5 $<'
+	@echo 'Executing target #8 $<'
 	@echo 'Invoking: ARM Ltd Windows GCC C Compiler'
 	"$(ARMSourceryDirEnv)/arm-none-eabi-gcc" "$<" @"Sources/Common/application.args" -MMD -MP -MF"$(@:%.o=%.d)" -o"Sources/Common/application.o"
 	@echo 'Finished building: $<'
@@ -60,7 +60,7 @@ Sources/Common/application.o: $(COMMON_ESCAPED)/application.c
 
 Sources/Common/platform.o: $(COMMON_ESCAPED)/platform.c
 	@echo 'Building file: $<'
-	@echo 'Executing target #6 $<'
+	@echo 'Executing target #9 $<'
 	@echo 'Invoking: ARM Ltd Windows GCC C Compiler'
 	"$(ARMSourceryDirEnv)/arm-none-eabi-gcc" "$<" @"Sources/Common/platform.args" -MMD -MP -MF"$(@:%.o=%.d)" -o"Sources/Common/platform.o"
 	@echo 'Finished building: $<'

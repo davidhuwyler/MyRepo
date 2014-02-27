@@ -34,7 +34,9 @@ Sources/ProcessorExpert.o: ../Sources/ProcessorExpert.c \
  D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/LEDpin2.h \
  D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/BitIoLdd2.h \
  D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/WAIT1.h \
- D:/Documents/HSLU/Intro/Git/Intro\ Repo/Projects/GroupMuffinFighters/Common/application.h
+ D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/SegLCD1.h \
+ D:/Documents/HSLU/Intro/Git/Intro\ Repo/Projects/GroupMuffinFighters/Common/application.h \
+ D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Project_Headers/daveApp.h
 
 D:/Programme/Freescale/CW10.5/CW\ MCU\ v10.5/MCU/ARM_GCC_Support/ewl/EWL_C/include/lib_ewl.prefix:
 
@@ -106,4 +108,8 @@ D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/BitIoLdd2.h:
 
 D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/WAIT1.h:
 
+D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/SegLCD1.h:
+
 D:/Documents/HSLU/Intro/Git/Intro\ Repo/Projects/GroupMuffinFighters/Common/application.h:
+
+D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Project_Headers/daveApp.h:

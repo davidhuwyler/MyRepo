@@ -38,6 +38,7 @@
 								<option id="org.eclipse.cdt.cross.arm.gnu.c.compiler.option.misc.enable.lstfilename.421741235" name="Enable Assembler Listing" superClass="org.eclipse.cdt.cross.arm.gnu.c.compiler.option.misc.enable.lstfilename" value="false" valueType="boolean"/>
 								<option id="org.eclipse.cdt.cross.arm.gnu.c.compiler.option.include.paths.1338678186" name="Include paths (-I)" superClass="org.eclipse.cdt.cross.arm.gnu.c.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Project_Headers&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}\Sources\LCD&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}\..\..\..\..\HSLU\Intro\Git\Intro Repo\Projects\GroupMuffinFighters\Common&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Project_Settings/Startup_Code&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${MCUToolsBaseDir}/ARM_GCC_Support/ewl/EWL_C/include&quot;"/>
