@@ -8,7 +8,7 @@
 #ifndef PLATFORM_LOCAL_H_
 #define PLATFORM_LOCAL_H_
 
-#define PL_BOARD_IS_FRDM_Dave
+#define PL_BOARD_IS_FRDM
 
 
 

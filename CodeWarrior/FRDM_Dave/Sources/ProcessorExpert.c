@@ -38,6 +38,15 @@
 #include "BitIoLdd2.h"
 #include "WAIT1.h"
 #include "SegLCD1.h"
+#include "SW1.h"
+#include "BitIoLdd3.h"
+#include "SW2.h"
+#include "BitIoLdd4.h"
+#include "CS1.h"
+#include "TI1.h"
+#include "TimerIntLdd1.h"
+#include "TU1.h"
+#include "PTC.h"
 /* Including shared modules, which are used for whole project */
 #include "PE_Types.h"
 #include "PE_Error.h"
@@ -63,7 +72,7 @@ int main(void)
   for(;;){
 	  
 	  daveMain();
-	  //APP_Run();
+	  APP_Run();
   }
 
 

@@ -19,7 +19,7 @@ by the component.
     0x00080000
  </td><td>SIM_SCGC5 register, peripheral SegLCD1.</td></tr>
 <tr><td>0x40053000</td><td>LCD_GCR</td><td>
-    0x08B50463
+    0x08B53C43
  </td><td>LCD_GCR register, peripheral SegLCD1.</td></tr>
 <tr><td>0x4004C000</td><td>PORTD_PCR0</td><td>
     0x00000000
@@ -229,7 +229,7 @@ registers of the peripheral(s) configured by the component.
         
 </div>
 <table class="regtbl2"><tr><td class="trowtit" colspan="2">Address</td><td colspan="2">0x40053000</td></tr>
-<tr class="trowtit"><td  class="trowtit" colspan="2">Initial value</td><td colspan="2">0x08B50463</td></tr>
+<tr class="trowtit"><td  class="trowtit" colspan="2">Initial value</td><td colspan="2">0x08B53C43</td></tr>
 <tr class="trowtit"><td  class="trowtit" colspan="2">After-reset value</td><td colspan="2">0x08310003</td></tr>
 <tr><td class="ttitle2">Bit</td><td class="ttitle2">Field</td><td class="ttitle2">Value</td><td class="ttitle2">Description</td></tr>
 <tr><td>31</td><td>RVEN</td><td>0x00</td><td>Regulated Voltage Enable</td>
@@ -239,14 +239,14 @@ registers of the peripheral(s) configured by the component.
 <tr><td>17</td><td>VSUPPLY</td><td>0x00</td><td>Voltage Supply Control</td>
 <tr><td>15</td><td>PADSAFE</td><td>0x00</td><td>Pad Safe State Enable</td>
 <tr><td>14</td><td>FDCIEN</td><td>0x00</td><td>LCD Fault Detection Complete Interrupt Enable</td>
-<tr><td>12 - 13</td><td>ALTDIV</td><td>0x00</td><td>LCD AlternateClock Divider</td>
-<tr><td>11</td><td>ALTSOURCE</td><td>0x00</td><td>Selects the alternate clock source</td>
+<tr><td>12 - 13</td><td>ALTDIV</td><td>0x02</td><td>LCD AlternateClock Divider</td>
+<tr><td>11</td><td>ALTSOURCE</td><td>0x01</td><td>Selects the alternate clock source</td>
 <tr><td>10</td><td>FFR</td><td>0x01</td><td>Fast Frame Rate Select</td>
 <tr><td>9</td><td>LCDDOZE</td><td>0x00</td><td>LCD Doze enable</td>
 <tr><td>8</td><td>LCDSTP</td><td>0x00</td><td>LCD Stop</td>
 <tr><td>7</td><td>LCDEN</td><td>0x00</td><td>LCD Driver Enable</td>
 <tr><td>6</td><td>SOURCE</td><td>0x01</td><td>LCD Clock Source Select</td>
-<tr><td>3 - 5</td><td>LCLK</td><td>0x04</td><td>LCD Clock Prescaler</td>
+<tr><td>3 - 5</td><td>LCLK</td><td>0x00</td><td>LCD Clock Prescaler</td>
 <tr><td>0 - 2</td><td>DUTY</td><td>0x00</td><td>LCD duty select</td>
 </tr></table>
 <div class="reghdr1">PORTD_PCR0</div>
@@ -1891,14 +1891,14 @@ registers of the peripheral(s) configured by the component.
 **            Voltage supply control                       : Drive VLL3 internally from VDD
 **            Charge pump                                  : Enabled
 **              Charge pump clock adjust                   : Intermediate (faster) clock
-**              Charge pump clock                          : 5.461 kHz
+**              Charge pump clock                          : 2.605 kHz
 **              Voltage regulator                          : Disabled
 **            Bias voltage VLL1                            : (VLL3 * 1/3) = 0.99V
 **            Bias voltage VLL2                            : (VLL3 * 2/3) = 1.98V
 **            Bias voltage VLL3                            : Connect internally to VDD(must be 3V)
 **          Blink rate bits value                          : 3
-**          Blink rate                                     : 2 Hz
-**          LCD frame frequency                            : 64 Hz
+**          Blink rate                                     : 0.954101 Hz
+**          LCD frame frequency                            : 61.062 Hz
 **          Base clock                                     : 1.024 kHz
 **          Fault detect                                   : Disabled
 **          Backplane pins                                 : 4
@@ -1976,7 +1976,7 @@ by the component.
     0x00080000
  </td><td>SIM_SCGC5 register, peripheral SegLCD1.</td></tr>
 <tr><td>0x40053000</td><td>LCD_GCR</td><td>
-    0x08B50463
+    0x08B53C43
  </td><td>LCD_GCR register, peripheral SegLCD1.</td></tr>
 <tr><td>0x4004C000</td><td>PORTD_PCR0</td><td>
     0x00000000
@@ -2186,7 +2186,7 @@ registers of the peripheral(s) configured by the component.
         
 </div>
 <table class="regtbl2"><tr><td class="trowtit" colspan="2">Address</td><td colspan="2">0x40053000</td></tr>
-<tr class="trowtit"><td  class="trowtit" colspan="2">Initial value</td><td colspan="2">0x08B50463</td></tr>
+<tr class="trowtit"><td  class="trowtit" colspan="2">Initial value</td><td colspan="2">0x08B53C43</td></tr>
 <tr class="trowtit"><td  class="trowtit" colspan="2">After-reset value</td><td colspan="2">0x08310003</td></tr>
 <tr><td class="ttitle2">Bit</td><td class="ttitle2">Field</td><td class="ttitle2">Value</td><td class="ttitle2">Description</td></tr>
 <tr><td>31</td><td>RVEN</td><td>0x00</td><td>Regulated Voltage Enable</td>
@@ -2196,14 +2196,14 @@ registers of the peripheral(s) configured by the component.
 <tr><td>17</td><td>VSUPPLY</td><td>0x00</td><td>Voltage Supply Control</td>
 <tr><td>15</td><td>PADSAFE</td><td>0x00</td><td>Pad Safe State Enable</td>
 <tr><td>14</td><td>FDCIEN</td><td>0x00</td><td>LCD Fault Detection Complete Interrupt Enable</td>
-<tr><td>12 - 13</td><td>ALTDIV</td><td>0x00</td><td>LCD AlternateClock Divider</td>
-<tr><td>11</td><td>ALTSOURCE</td><td>0x00</td><td>Selects the alternate clock source</td>
+<tr><td>12 - 13</td><td>ALTDIV</td><td>0x02</td><td>LCD AlternateClock Divider</td>
+<tr><td>11</td><td>ALTSOURCE</td><td>0x01</td><td>Selects the alternate clock source</td>
 <tr><td>10</td><td>FFR</td><td>0x01</td><td>Fast Frame Rate Select</td>
 <tr><td>9</td><td>LCDDOZE</td><td>0x00</td><td>LCD Doze enable</td>
 <tr><td>8</td><td>LCDSTP</td><td>0x00</td><td>LCD Stop</td>
 <tr><td>7</td><td>LCDEN</td><td>0x00</td><td>LCD Driver Enable</td>
 <tr><td>6</td><td>SOURCE</td><td>0x01</td><td>LCD Clock Source Select</td>
-<tr><td>3 - 5</td><td>LCLK</td><td>0x04</td><td>LCD Clock Prescaler</td>
+<tr><td>3 - 5</td><td>LCLK</td><td>0x00</td><td>LCD Clock Prescaler</td>
 <tr><td>0 - 2</td><td>DUTY</td><td>0x00</td><td>LCD duty select</td>
 </tr></table>
 <div class="reghdr1">PORTD_PCR0</div>
@@ -3848,14 +3848,14 @@ registers of the peripheral(s) configured by the component.
 **            Voltage supply control                       : Drive VLL3 internally from VDD
 **            Charge pump                                  : Enabled
 **              Charge pump clock adjust                   : Intermediate (faster) clock
-**              Charge pump clock                          : 5.461 kHz
+**              Charge pump clock                          : 2.605 kHz
 **              Voltage regulator                          : Disabled
 **            Bias voltage VLL1                            : (VLL3 * 1/3) = 0.99V
 **            Bias voltage VLL2                            : (VLL3 * 2/3) = 1.98V
 **            Bias voltage VLL3                            : Connect internally to VDD(must be 3V)
 **          Blink rate bits value                          : 3
-**          Blink rate                                     : 2 Hz
-**          LCD frame frequency                            : 64 Hz
+**          Blink rate                                     : 0.954101 Hz
+**          LCD frame frequency                            : 61.062 Hz
 **          Base clock                                     : 1.024 kHz
 **          Fault detect                                   : Disabled
 **          Backplane pins                                 : 4

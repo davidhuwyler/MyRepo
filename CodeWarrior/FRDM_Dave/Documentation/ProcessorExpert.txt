@@ -54,6 +54,47 @@ Module "SegLCD1"   (component SegLCD_LDD)
                 module, the method allows alternate display setting. A segment state is set by method SetFrontplaneData or 
                 SetAlternateFrontplaneData.
 
+Module "SW1"       (component BitIO)
+   - SW1_GetVal -Returns the input/output value. If the direction is [input] then the input value of the pin is read and 
+                returned. If the direction is [output] then the last written value is returned (see <Safe mode> property for 
+                limitations). This method cannot be disabled if direction is [input].
+
+Module "SW2"       (component BitIO)
+   - SW2_GetVal -Returns the input/output value. If the direction is [input] then the input value of the pin is read and 
+                returned. If the direction is [output] then the last written value is returned (see <Safe mode> property for 
+                limitations). This method cannot be disabled if direction is [input].
+
+Module "CS1"       (component CriticalSection)
+   - CS1_CriticalVariable -Defines a variable if necessary. This is a macro.
+   - CS1_EnterCritical -Enters a critical section
+   - CS1_ExitCritical -Exits a critical section
+
+Module "TI1"       (component TimerInt)
+
+Module "TU1"       (component TimerUnit_LDD)
+   - TU1_Init -Initializes the device. Allocates memory for the device data structure, allocates interrupt vectors and sets 
+                interrupt priority, sets pin routing, sets timing, etc. If the property <"Enable in init. code"> is set to 
+                "yes" value then the device is also enabled (see the description of the <Enable> method). In this case the 
+                <Enable> method is not necessary and needn't to be generated. This method can be called only once. Before the 
+                second call of Init the <Deinit> must be called first.
+   - TU1_SetEventMask -Enables/disables event(s). The events contained within the mask are enabled. Events not contained within 
+                the mask are disabled. The component event masks are defined in the PE_Types.h file. Note: Event that are not 
+                generated (See the "Events" tab in the Component inspector) are not handled by this method. In this case the 
+                method returns ERR_PARAM_MASK error code. See also method <GetEventMask>.
+   - TU1_GetEventMask -Returns current events mask. Note: Event that are not generated (See the "Events" tab in the Component 
+                inspector) are not handled by this method. See also method <SetEventMask>.
+   - TU1_GetCounterValue -Returns the content of counter register. This method can be used both if counter is enabled and if 
+                counter is disabled. The method is not available if HW doesn't allow reading of the counter.
+   - TU1_SetOffsetTicks -Sets the new offset value to channel specified by the parameter ChannelIdx. It is user responsibility 
+                to use value below selected period. This method is available when at least one channel is configured.
+   - TU1_GetOffsetTicks -Returns the number of counter ticks to compare match channel specified by the parameter ChannelIdx. 
+                See also method <SetOffsetTicks>. This method is available when at least one channel is configured.
+
+Module "PTC"       (component Init_GPIO_VAR0)
+   - PTC_Init -This method initializes registers of the GPIO module according to the Peripheral Initialization settings. Call 
+                this method in user code to initialize the module. By default, the method is called by PE automatically; see 
+                "Call Init method" property of the component for more details.
+
 Module "Cpu"       (component MKL46Z256MC4)
 
 ===================================================================================

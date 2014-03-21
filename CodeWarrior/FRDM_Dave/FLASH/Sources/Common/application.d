@@ -5,8 +5,6 @@ Sources/Common/application.o: \
  D:/Programme/Freescale/CW10.5/CW\ MCU\ v10.5/MCU/ARM_GCC_Support/ewl/EWL_C/include/ewl_c_version.h \
  D:/Documents/HSLU/Intro/Git/Intro\ Repo/Projects/GroupMuffinFighters/Common/LED.h \
  D:/Documents/HSLU/Intro/Git/Intro\ Repo/Projects/GroupMuffinFighters/Common/Platform.h \
- D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Project_Headers/platform_local.h \
- D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/LED1.h \
  D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/PE_Types.h \
  D:/Programme/Freescale/CW10.5/CW\ MCU\ v10.5/MCU/ARM_GCC_Support/ewl/EWL_C/include/stdint.h \
  D:/Programme/Freescale/CW10.5/CW\ MCU\ v10.5/MCU/ARM_GCC_Support/ewl/EWL_C/include/ansi_parms.h \
@@ -16,6 +14,16 @@ Sources/Common/application.o: \
  D:/Programme/Freescale/CW10.5/CW\ MCU\ v10.5/MCU/ARM_GCC_Support/ewl/EWL_C/include/cstdint \
  D:/Programme/Freescale/CW10.5/CW\ MCU\ v10.5/MCU/ARM_GCC_Support/ewl/EWL_C/include/limits_api.h \
  D:/Programme/Freescale/CW10.5/CW\ MCU\ v10.5/MCU/ARM_GCC_Support/ewl/EWL_C/include/ewl_lib_ext1.h \
+ D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/PE_Error.h \
+ D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Project_Headers/platform_local.h \
+ D:/Programme/Freescale/CW10.5/CW\ MCU\ v10.5/MCU/ARM_GCC_Support/ewl/EWL_C/include/stddef.h \
+ D:/Programme/Freescale/CW10.5/CW\ MCU\ v10.5/MCU/ARM_GCC_Support/ewl/EWL_C/include/cstddef \
+ D:/Programme/Freescale/CW10.5/CW\ MCU\ v10.5/MCU/ARM_GCC_Support/ewl/EWL_C/include/null.h \
+ D:/Programme/Freescale/CW10.5/CW\ MCU\ v10.5/MCU/ARM_GCC_Support/ewl/EWL_C/include/size_t.h \
+ D:/Programme/Freescale/CW10.5/CW\ MCU\ v10.5/MCU/ARM_GCC_Support/ewl/EWL_C/include/wchar_t.h \
+ D:/Programme/Freescale/CW10.5/CW\ MCU\ v10.5/MCU/ARM_GCC_Support/ewl/EWL_C/include/ewl_rsize_t.h \
+ D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/LED1.h \
+ D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/PE_Types.h \
  D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/PE_Error.h \
  D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/PE_Const.h \
  D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/IO_Map.h \
@@ -28,7 +36,16 @@ Sources/Common/application.o: \
  D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/LEDpin2.h \
  D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/BitIoLdd2.h \
  D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/WAIT1.h \
- D:/Documents/HSLU/Intro/Git/Intro\ Repo/Projects/GroupMuffinFighters/Common/Application.h
+ D:/Documents/HSLU/Intro/Git/Intro\ Repo/Projects/GroupMuffinFighters/Common/Application.h \
+ D:/Documents/HSLU/Intro/Git/Intro\ Repo/Projects/GroupMuffinFighters/Common/Event.h \
+ D:/Documents/HSLU/Intro/Git/Intro\ Repo/Projects/GroupMuffinFighters/Common/Keys.h \
+ D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/SW1.h \
+ D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/BitIoLdd3.h \
+ D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/SW2.h \
+ D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/BitIoLdd4.h \
+ D:/Documents/HSLU/Intro/Git/Intro\ Repo/Projects/GroupMuffinFighters/Common/Trigger.h \
+ D:/Documents/HSLU/Intro/Git/Intro\ Repo/Projects/GroupMuffinFighters/Common/Timer.h \
+ D:/Documents/HSLU/Intro/Git/Intro\ Repo/Projects/GroupMuffinFighters/Common/Buzzer.h
 
 D:/Programme/Freescale/CW10.5/CW\ MCU\ v10.5/MCU/ARM_GCC_Support/ewl/EWL_C/include/lib_ewl.prefix:
 
@@ -39,10 +56,6 @@ D:/Programme/Freescale/CW10.5/CW\ MCU\ v10.5/MCU/ARM_GCC_Support/ewl/EWL_C/inclu
 D:/Documents/HSLU/Intro/Git/Intro\ Repo/Projects/GroupMuffinFighters/Common/LED.h:
 
 D:/Documents/HSLU/Intro/Git/Intro\ Repo/Projects/GroupMuffinFighters/Common/Platform.h:
-
-D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Project_Headers/platform_local.h:
-
-D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/LED1.h:
 
 D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/PE_Types.h:
 
@@ -61,6 +74,26 @@ D:/Programme/Freescale/CW10.5/CW\ MCU\ v10.5/MCU/ARM_GCC_Support/ewl/EWL_C/inclu
 D:/Programme/Freescale/CW10.5/CW\ MCU\ v10.5/MCU/ARM_GCC_Support/ewl/EWL_C/include/limits_api.h:
 
 D:/Programme/Freescale/CW10.5/CW\ MCU\ v10.5/MCU/ARM_GCC_Support/ewl/EWL_C/include/ewl_lib_ext1.h:
+
+D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/PE_Error.h:
+
+D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Project_Headers/platform_local.h:
+
+D:/Programme/Freescale/CW10.5/CW\ MCU\ v10.5/MCU/ARM_GCC_Support/ewl/EWL_C/include/stddef.h:
+
+D:/Programme/Freescale/CW10.5/CW\ MCU\ v10.5/MCU/ARM_GCC_Support/ewl/EWL_C/include/cstddef:
+
+D:/Programme/Freescale/CW10.5/CW\ MCU\ v10.5/MCU/ARM_GCC_Support/ewl/EWL_C/include/null.h:
+
+D:/Programme/Freescale/CW10.5/CW\ MCU\ v10.5/MCU/ARM_GCC_Support/ewl/EWL_C/include/size_t.h:
+
+D:/Programme/Freescale/CW10.5/CW\ MCU\ v10.5/MCU/ARM_GCC_Support/ewl/EWL_C/include/wchar_t.h:
+
+D:/Programme/Freescale/CW10.5/CW\ MCU\ v10.5/MCU/ARM_GCC_Support/ewl/EWL_C/include/ewl_rsize_t.h:
+
+D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/LED1.h:
+
+D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/PE_Types.h:
 
 D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/PE_Error.h:
 
@@ -87,3 +120,21 @@ D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/BitIoLdd2.h:
 D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/WAIT1.h:
 
 D:/Documents/HSLU/Intro/Git/Intro\ Repo/Projects/GroupMuffinFighters/Common/Application.h:
+
+D:/Documents/HSLU/Intro/Git/Intro\ Repo/Projects/GroupMuffinFighters/Common/Event.h:
+
+D:/Documents/HSLU/Intro/Git/Intro\ Repo/Projects/GroupMuffinFighters/Common/Keys.h:
+
+D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/SW1.h:
+
+D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/BitIoLdd3.h:
+
+D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/SW2.h:
+
+D:/Documents/GitHub/MyRepo/CodeWarrior/FRDM_Dave/Generated_Code/BitIoLdd4.h:
+
+D:/Documents/HSLU/Intro/Git/Intro\ Repo/Projects/GroupMuffinFighters/Common/Trigger.h:
+
+D:/Documents/HSLU/Intro/Git/Intro\ Repo/Projects/GroupMuffinFighters/Common/Timer.h:
+
+D:/Documents/HSLU/Intro/Git/Intro\ Repo/Projects/GroupMuffinFighters/Common/Buzzer.h:

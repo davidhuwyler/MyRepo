@@ -32,6 +32,11 @@
 - \subpage BitIoLdd2
 - \subpage SegLCD1
 - \subpage SegLCD1
+- \subpage BitIoLdd3
+- \subpage BitIoLdd4
+- \subpage TU1
+- \subpage TimerIntLdd1
+- \subpage PTC
 
 
 */

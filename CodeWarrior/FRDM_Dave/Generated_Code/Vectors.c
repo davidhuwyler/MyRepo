@@ -5,7 +5,7 @@
 **     Processor   : MKL46Z256VMC4
 **     Version     : Component 01.002, Driver 01.04, CPU db: 3.00.000
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2014-02-26, 18:47, # CodeGen: 5
+**     Date/Time   : 2014-03-21, 23:51, # CodeGen: 11
 **     Abstract    :
 **
 **     Settings    :
@@ -37,6 +37,15 @@
   #include "BitIoLdd2.h"
   #include "WAIT1.h"
   #include "SegLCD1.h"
+  #include "SW1.h"
+  #include "BitIoLdd3.h"
+  #include "SW2.h"
+  #include "BitIoLdd4.h"
+  #include "CS1.h"
+  #include "TI1.h"
+  #include "TimerIntLdd1.h"
+  #include "TU1.h"
+  #include "PTC.h"
   #include "Events.h"
 
 
@@ -89,7 +98,7 @@
     (tIsrFunc)&Cpu_Interrupt,          /* 0x1E  0x00000078   -   ivINT_UART2                   unused by PE */
     (tIsrFunc)&Cpu_Interrupt,          /* 0x1F  0x0000007C   -   ivINT_ADC0                    unused by PE */
     (tIsrFunc)&Cpu_Interrupt,          /* 0x20  0x00000080   -   ivINT_CMP0                    unused by PE */
-    (tIsrFunc)&Cpu_Interrupt,          /* 0x21  0x00000084   -   ivINT_TPM0                    unused by PE */
+    (tIsrFunc)&TU1_Interrupt,          /* 0x21  0x00000084   2   ivINT_TPM0                    used by PE */
     (tIsrFunc)&Cpu_Interrupt,          /* 0x22  0x00000088   -   ivINT_TPM1                    unused by PE */
     (tIsrFunc)&Cpu_Interrupt,          /* 0x23  0x0000008C   -   ivINT_TPM2                    unused by PE */
     (tIsrFunc)&Cpu_Interrupt,          /* 0x24  0x00000090   -   ivINT_RTC                     unused by PE */

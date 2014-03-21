@@ -10,23 +10,18 @@
 #include "SegLCD1.h"
 #include "LCD.h"
 #include "WAIT1.h"
+#include "Trigger.h"
+
 
 // Lokale Funktionen
 void LCDstart();
 void writeInt(int value,int dot);
 
 void daveMain(void){
-	int i;
+	int i = 0;
 	LCDstart();
-	
-	for(i=0;i<1000;i++)
-	{
-		writeInt(i,1);
-		WAIT1_Waitms(100);
-	}
-		
-for(;;){}
-	
+
+	writeInt(i,1);	
 }
 
 void LCDstart(void)

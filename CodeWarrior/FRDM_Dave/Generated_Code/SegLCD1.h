@@ -6,7 +6,7 @@
 **     Component   : SegLCD_LDD
 **     Version     : Component 01.017, Driver 01.06, CPU db: 3.00.000
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2014-02-26, 18:47, # CodeGen: 5
+**     Date/Time   : 2014-03-21, 23:00, # CodeGen: 10
 **     Abstract    :
 **         This component "SegLCD_LDD" implements the segment Liquid Crystal Display (SegLCD)
 **         driver module. It can drive an LCD which is composed of variable number
@@ -23,14 +23,14 @@
 **            Voltage supply control                       : Drive VLL3 internally from VDD
 **            Charge pump                                  : Enabled
 **              Charge pump clock adjust                   : Intermediate (faster) clock
-**              Charge pump clock                          : 5.461 kHz
+**              Charge pump clock                          : 2.605 kHz
 **              Voltage regulator                          : Disabled
 **            Bias voltage VLL1                            : (VLL3 * 1/3) = 0.99V
 **            Bias voltage VLL2                            : (VLL3 * 2/3) = 1.98V
 **            Bias voltage VLL3                            : Connect internally to VDD(must be 3V)
 **          Blink rate bits value                          : 3
-**          Blink rate                                     : 2 Hz
-**          LCD frame frequency                            : 64 Hz
+**          Blink rate                                     : 0.954101 Hz
+**          LCD frame frequency                            : 61.062 Hz
 **          Base clock                                     : 1.024 kHz
 **          Fault detect                                   : Disabled
 **          Backplane pins                                 : 4

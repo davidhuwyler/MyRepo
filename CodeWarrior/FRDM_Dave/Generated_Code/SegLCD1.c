@@ -6,7 +6,7 @@
 **     Component   : SegLCD_LDD
 **     Version     : Component 01.017, Driver 01.06, CPU db: 3.00.000
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2014-02-26, 18:47, # CodeGen: 5
+**     Date/Time   : 2014-03-21, 23:00, # CodeGen: 10
 **     Abstract    :
 **         This component "SegLCD_LDD" implements the segment Liquid Crystal Display (SegLCD)
 **         driver module. It can drive an LCD which is composed of variable number
@@ -23,14 +23,14 @@
 **            Voltage supply control                       : Drive VLL3 internally from VDD
 **            Charge pump                                  : Enabled
 **              Charge pump clock adjust                   : Intermediate (faster) clock
-**              Charge pump clock                          : 5.461 kHz
+**              Charge pump clock                          : 2.605 kHz
 **              Voltage regulator                          : Disabled
 **            Bias voltage VLL1                            : (VLL3 * 1/3) = 0.99V
 **            Bias voltage VLL2                            : (VLL3 * 2/3) = 1.98V
 **            Bias voltage VLL3                            : Connect internally to VDD(must be 3V)
 **          Blink rate bits value                          : 3
-**          Blink rate                                     : 2 Hz
-**          LCD frame frequency                            : 64 Hz
+**          Blink rate                                     : 0.954101 Hz
+**          LCD frame frequency                            : 61.062 Hz
 **          Base clock                                     : 1.024 kHz
 **          Fault detect                                   : Disabled
 **          Backplane pins                                 : 4
@@ -200,14 +200,15 @@ LDD_TDeviceData* SegLCD1_Init(LDD_TUserData *UserDataPtr)
   PORTB_PCR10 &= (uint32_t)~(uint32_t)((PORT_PCR_ISF_MASK | PORT_PCR_MUX(0x07)));                                   
   /* PORTB_PCR11: ISF=0,MUX=0 */
   PORTB_PCR11 &= (uint32_t)~(uint32_t)((PORT_PCR_ISF_MASK | PORT_PCR_MUX(0x07)));                                   
-  /* LCD_GCR: RVEN=0,??=0,??=0,??=0,RVTRIM=0,CPSEL=1,??=0,LADJ=1,??=0,??=0,VSUPPLY=0,??=0,PADSAFE=0,FDCIEN=0,ALTDIV=0,ALTSOURCE=0,FFR=1,LCDDOZE=0,LCDSTP=0,LCDEN=0,SOURCE=1,LCLK=4,DUTY=3 */
+  /* LCD_GCR: RVEN=0,??=0,??=0,??=0,RVTRIM=0,CPSEL=1,??=0,LADJ=1,??=0,??=0,VSUPPLY=0,??=0,PADSAFE=0,FDCIEN=0,ALTDIV=3,ALTSOURCE=1,FFR=1,LCDDOZE=0,LCDSTP=0,LCDEN=0,SOURCE=1,LCLK=0,DUTY=3 */
   LCD_GCR = LCD_GCR_RVTRIM(0x00) |
             LCD_GCR_CPSEL_MASK |
             LCD_GCR_LADJ(0x01) |
-            LCD_GCR_ALTDIV(0x00) |
+            LCD_GCR_ALTDIV(0x03) |
+            LCD_GCR_ALTSOURCE_MASK |
             LCD_GCR_FFR_MASK |
             LCD_GCR_SOURCE_MASK |
-            LCD_GCR_LCLK(0x04) |
+            LCD_GCR_LCLK(0x00) |
             LCD_GCR_DUTY(0x03);        /* Set general control register */
   /* LCD_AR: ??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=1,??=0,??=0,??=0,??=0,??=0,??=0,??=0,BLINK=0,ALT=0,BLANK=0,??=0,BMODE=0,BRATE=3 */
   LCD_AR = (LCD_AR_BRATE(0x03) | 0x8000U); /* Set auxillary register */
